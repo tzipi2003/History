@@ -1,4 +1,5 @@
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom'
+// import "bootstrap/dist/css/bootstrap.min.css";
 //pages
 import Connect from "./Component/Connect";
 import About from "./Component/About";
@@ -12,15 +13,15 @@ function App() {
           <h1>Our Site Information</h1>
           <Link to="/"> Home</Link>
           <Link to="/About"> About</Link>
-      
+
         </nav>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/About" element={<About />} />
-         
+
         </Routes>
       </BrowserRouter>
-      <Connect/>
+      <Connect />
     </div>
   );
 }
